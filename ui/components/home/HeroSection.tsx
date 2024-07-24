@@ -1,14 +1,29 @@
 import HeroStats from './HeroStats';
 import HeroQuote from './HeroQuote';
 
+import Image from 'next/image'
+
 function HeroSection() {
     return (
-      <section className="bg-gray-100 py-24">
-        <div className="container mx-auto">
+      
+        <div className="mx-auto">
+            <div className='container mx-auto'>
+
+            <Image 
+            src='/hero-desktop.png'
+            width={1000}
+            height={760}
+            className='md:w-full h-auto object-cover mb-8'
+            alt="placeholder hero"
+            />
+
+            </div>
+          
           <HeroStats />
           <HeroQuote />
+         
         </div>
-      </section>
+      
     );
   }
   
