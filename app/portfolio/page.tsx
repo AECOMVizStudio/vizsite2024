@@ -53,12 +53,21 @@ const portfolioItems = [
 ]
 
 const Page: React.FC = () => {
-    return (    
-    <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
-      {portfolioItems.map((item, index) => (
-        <PortfolioItem key={index} {...item} />
-      ))}
-    </div>);
+    return (
+      <>
+        <div className=" text-gray-700">
+          <div className="container mx-auto py-12 text-left p-4">
+            <h1 className="text-4xl font-bold">Portfolio</h1>
+          </div>
+        </div>
+
+        <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+          {portfolioItems.map((item, index) => (
+            <PortfolioItem key={index} {...item} />
+          ))}
+        </div>
+      </>
+    );
   }
 
 export default Page;
