@@ -15,7 +15,7 @@ const Footer = () => {
               <Link href="/featured">Featured</Link>
             </li>
             <li>
-              <Link href="/legacy">Legacy Mode</Link>
+              <Link href="https://aecomvis2023.herokuapp.com/portfolio" target='_blank'>Legacy Mode</Link>
             </li>
           </ul>
         </div>

@@ -1,6 +1,5 @@
 import Layout from './layout';
-import Header from '@/ui/header'
-import Footer from'@/ui/footer'
+
 
 // main content
 import Title from '@/ui/components/home/title'
@@ -12,13 +11,13 @@ import Services from '@/ui/components/home/Services';
 
 export default function Home() {
   return (
-    <Layout>
-      <Header />
+    <div>
+      
       <Title />
-      <HeroSection/>
-      <BusinessLines/>
+      <HeroSection />
+      <BusinessLines />
       <Services />
-      <Footer />
-    </Layout>
+      
+    </div>
   );
 }
