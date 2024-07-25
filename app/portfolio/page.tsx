@@ -2,71 +2,72 @@ import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
 const portfolioItems = [
   {
-    imageSrc:'/portfolio/portfolioImage.png',
+    imageSrc:'https://placehold.co/800x400',
     title: 'Riverfront Park',
     href: '/featured',
     tags: ['3D' , 'Architecture']
   },
 
   {
-    imageSrc: '/images/virtual-room.jpg',
-    title: 'Virtual Room',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'STEAM 360',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Buildings', 'Electricity'],
+    tags: ['Virtual Room', 'Outreach'],
   },
   {
-    imageSrc: '/images/immersive-project.jpg',
-    title: 'Immersive Project',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'Route 3',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Simulation'],
+    tags: ['Infrastructure'],
   },
   {
-    imageSrc: '/images/video.jpg',
-    title: 'Video',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'Energy 360',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Interactive'],
+    tags: ['Virtual Room', 'Energy'],
   },
   {
-    imageSrc: '/images/something-else-1.jpg',
-    title: 'Something Else',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'LA 28',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
     tags: ['Architecture'],
   },
   {
-    imageSrc: '/images/something-else-2.jpg',
-    title: 'Something Else',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'CHSR',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['VR'],
+    tags: ['3D Modeling'],
   },
   {
-    imageSrc: '/images/something-else-3.jpg',
-    title: 'Something Else',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'Second Avenue Subway',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Architecture'],
+    tags: ['3D Rendering', 'Architecture'],
   },
   {
-    imageSrc: '/images/something-else-4.jpg',
-    title: 'Something Else',
+    imageSrc: 'https://placehold.co/800x400',
+    title: 'West Seattle Link Extension',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['VR'],
+    tags: ['Realtime 360', 'Transportation'],
   },
 ]
 
 const Page: React.FC = () => {
     return (
-      <>
+      <div className="mx-auto">
         <div className=" text-gray-700">
-          <div className="container mx-auto py-12 text-left p-4">
+          <div className="container mx-auto py-12 text-left">
             <h1 className="text-4xl font-bold">Portfolio</h1>
+            <h2 className="text-md mt-4">Check out some of our recent projects</h2>
           </div>
         </div>
 
-        <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
           {portfolioItems.map((item, index) => (
             <PortfolioItem key={index} {...item} />
           ))}
         </div>
-      </>
+      </div>
     );
   }
 
