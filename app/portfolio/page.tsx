@@ -2,7 +2,7 @@ import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
 const portfolioItems = [
   {
-    imageSrc:'/portfolio/featured.webp',
+    imageSrc:'/portfolio/portfolioImage.png',
     title: 'Riverfront Park',
     href: '/featured',
     tags: ['3D' , 'Architecture']
