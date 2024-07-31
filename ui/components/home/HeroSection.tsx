@@ -15,6 +15,7 @@ function HeroSection() {
             height={760}
             className='md:w-full h-auto object-cover mb-8'
             alt="placeholder hero"
+            priority={true}
             />
 
             </div>

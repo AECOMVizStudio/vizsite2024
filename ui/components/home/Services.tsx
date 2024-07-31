@@ -6,12 +6,13 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, subtitles }) => {
     return (
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <img src={image} alt={title} className="w-full h-40 object-cover mb-4" />
-        <h3 className="text-xl font-bold">{title}</h3>
+      <div className="bg-white shadow-md p-4 mx-auto" style={{ maxWidth: '350px' }}>
+        <img src={image} alt={title} className="w-full h-40 object-cover shadow-md mb-4" />
+        <h3 className="text-2xl font-bold">{title}</h3>
+        <hr></hr>
         <ul>
           {subtitles.map((subtitle, index) => (
-            <li key={index}>{subtitle}</li>
+            <li key={index} className="text-lg my-1 list-disc">{subtitle}</li>
           ))}
         </ul>
       </div>
@@ -21,7 +22,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, subtitles }) =>
   const Services = () => {
     const servicesData: ServiceCardProps[] = [
       {
-        image: '/path/to/image1.jpg', // Replace with actual image paths
+        image: '/360room.png', // Replace with actual image paths
         title: '360 Virtual Rooms',
         subtitles: [
           'Customizable web-based rooms',
@@ -39,7 +40,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, subtitles }) =>
         ],
       },
       {
-        image: '/path/to/image1.jpg', // Replace with actual image paths
+        image: '/e3d.png', // Replace with actual image paths
         title: 'Realtime 3D + Web Development',
         subtitles: [
           'Fully explorable, fully customizable worlds',
