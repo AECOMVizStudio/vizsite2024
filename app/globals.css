@@ -17,6 +17,24 @@
 }
 
 
+.text-gradient {
+  background: linear-gradient(to bottom right, #064e3b, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes colorChange {
+  0% { color: #3b82f6; }   /* Blue */
+  33% { color: #10b981; }  /* Green */
+  66% { color: #6366f1; }  /* Indigo */
+  100% { color: #82109e; }  /* Indigo */
+}
+
+.color-change {
+  animation: colorChange 10s infinite;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
