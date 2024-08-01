@@ -1,7 +1,3 @@
-import HeroStats from './HeroStats';
-import HeroQuote from './HeroQuote';
-import Title from './title';
-
 import TypedText from './TypedText';
 
 import Image from 'next/image'
@@ -34,18 +30,6 @@ function HeroSection() {
               </div>
               
             </div>
-            {/* <div className="relative z-10 flex items-start justify-center h-full pt-20 text-center">
-              <div>
-                <h1 className="text-6xl font-bold mb-4">Your Hero Title</h1>
-                <p className="text-xl">Your hero subtitle or description goes here.</p>
-              </div>
-            </div> */}
-
-            
-            <HeroStats />
-            <HeroQuote />
-          
-
          
         </div>
       
