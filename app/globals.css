@@ -24,6 +24,9 @@
 .bg-right-stat {
   background-color: #111111;
 }
+.quote-background {
+  background-color: #19171A;
+}
 
 
 @layer utilities {
