@@ -1,27 +1,40 @@
 import HeroStats from './HeroStats';
 import HeroQuote from './HeroQuote';
+import Title from './title';
 
 import Image from 'next/image'
 
 function HeroSection() {
     return (
       
-        <div className="mx-auto">
-            <div className='container mx-auto'>
+        <div className="relative h-screen w-full bg-cover">
+            
 
             <Image 
-            src='/hero-desktop.png'
-            width={1000}
-            height={760}
-            className='md:w-full h-auto object-cover mb-8'
-            alt="placeholder hero"
-            priority={true}
+            src='/sunsethero.png'
+            alt="Hero Image" 
+            fill={true}
+            priority
+            className="z-0"
             />
 
+            <div className=" z-10 flex items-start justify-center h-full pt-10 text-left">
+              
+              <Title />
+              
             </div>
+            {/* <div className="relative z-10 flex items-start justify-center h-full pt-20 text-center">
+              <div>
+                <h1 className="text-6xl font-bold mb-4">Your Hero Title</h1>
+                <p className="text-xl">Your hero subtitle or description goes here.</p>
+              </div>
+            </div> */}
+
+            
+            <HeroStats />
+            <HeroQuote />
           
-          <HeroStats />
-          <HeroQuote />
+
          
         </div>
       

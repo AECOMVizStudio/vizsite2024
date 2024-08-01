@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link';
+import { useState, useEffect} from 'react'
 
 const links = [
   { name: 'Home', href: '/'},
@@ -8,16 +10,32 @@ const links = [
 ]
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect (() => {
+    const handleScroll = () => {
+      if(window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false)
+      }
+    };
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header className="p-4 bg-white shadow-md flex justify-between items-center">
-      <h1 className="text-xl font-bold">AECOM Viz Studio</h1>
+    <header className={`fixed w-full z-10 p-4 transition-all duration-300 ${scrolled ? 'bg-black bg-opacity-90' : 'bg-transparent'} flex justify-between items-center`}>
+      <h1 className="text-xl font-bold text-gray-200">AECOM Viz Studio</h1>
       <nav>
         <ul className="flex space-x-8">
           {links.map((link) => {
             return (
               <Link key={link.name}
               href={link.href}
-              className='text-gray-700'
+              className='text-gray-200 uppercase'
               >
                 <p className='hidden md:block'>{link.name}</p>
               </Link>
