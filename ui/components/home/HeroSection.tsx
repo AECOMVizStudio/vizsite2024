@@ -17,7 +17,7 @@ function HeroSection() {
             />
 
             
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+            {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
             <div className="container relative mx-auto z-10 flex flex-col align-center justify-center h-full">
               
               <h1 className="text-gray-200 text-6xl font-extrabold text-left mb-3" style={{ height: '130px' }}>

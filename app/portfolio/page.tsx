@@ -1,3 +1,4 @@
+import Header from "@/ui/header";
 import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
 const portfolioItems = [
@@ -54,6 +55,10 @@ const portfolioItems = [
 
 const Page: React.FC = () => {
     return (
+      <>
+      
+      
+      
       <div className="mx-auto">
         <div className=" text-gray-700">
           <div className="container mx-auto py-12 text-left">
@@ -68,6 +73,7 @@ const Page: React.FC = () => {
           ))}
         </div>
       </div>
+      </>
     );
   }
 
