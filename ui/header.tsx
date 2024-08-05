@@ -15,11 +15,11 @@ const Header = () => {
   const pathname = usePathname()
 
   useEffect (() => {
-    if (pathname == '/'){
+    
 
       const handleScroll = () => {
         
-        if(window.scrollY > 200) {
+        if(window.scrollY > 0) {
           setScrolled(true);
         }
         else {
@@ -27,14 +27,16 @@ const Header = () => {
         }
       }
     
-      
-      window.addEventListener('scroll', handleScroll)
-      return () => {
-        window.removeEventListener('scroll', handleScroll)
-      } 
-    } else {
-      setScrolled(true)
-    }
+      if (pathname == '/'){
+        window.addEventListener('scroll', handleScroll)
+        handleScroll()
+      } else {
+        setScrolled(true)
+      }
+        return () => {
+          window.removeEventListener('scroll', handleScroll)
+        }
+
   }, [pathname])
 
   return (
