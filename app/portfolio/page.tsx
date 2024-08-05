@@ -1,4 +1,4 @@
-import Header from "@/ui/header";
+
 import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
 const portfolioItems = [

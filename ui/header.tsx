@@ -16,7 +16,6 @@ const Header = () => {
 
   useEffect (() => {
     
-
       const handleScroll = () => {
         
         if(window.scrollY > 0) {
@@ -27,6 +26,7 @@ const Header = () => {
         }
       }
     
+
       if (pathname == '/'){
         window.addEventListener('scroll', handleScroll)
         handleScroll()
