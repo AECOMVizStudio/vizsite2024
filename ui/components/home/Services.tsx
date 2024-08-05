@@ -8,7 +8,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, subtitles }) => {
     return (
-      <div className="bg-white shadow-md p-4 mx-auto" style={{ maxWidth: '350px' }}>
+      <div className="bg-gray-400 shadow-md p-4 mx-auto" style={{ maxWidth: '350px' }}>
         <img src={image} alt={title} className="w-full h-40 object-cover shadow-md mb-4" />
         <h3 className="text-2xl font-bold">{title}</h3>
         <hr></hr>
