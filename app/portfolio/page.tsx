@@ -55,15 +55,15 @@ const portfolioItems = [
 
 const Page: React.FC = () => {
     return (
-      <>
       
       
       
-      <div className="mx-auto">
+      
+      <div className="mx-auto py-24">
         <div className=" text-gray-700">
           <div className="container mx-auto py-12 text-left">
             <h1 className="text-4xl font-bold">Portfolio</h1>
-            <h2 className="text-md mt-4">Check out some of our recent projects</h2>
+            <h2 className="text-md mt-4">Check out some of our recent projects. Hover to learn more.</h2>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ const Page: React.FC = () => {
           ))}
         </div>
       </div>
-      </>
+      
     );
   }
 
