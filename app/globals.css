@@ -16,6 +16,33 @@
   }
 }
 
+@keyframes multicolor-border {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  75% {
+    border-color: blue;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+.multicolor-border {
+  border: 2px solid transparent;
+  border-image-slice: 1;
+}
+
+.group:hover .multicolor-border {
+  animation: multicolor-border 2s linear infinite;
+}
+
 
 .color-change {
   animation: colorChange 10s infinite;
