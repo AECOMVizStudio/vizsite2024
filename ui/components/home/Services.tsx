@@ -1,66 +1,75 @@
+import Image from 'next/image'
+import Link from 'next/link';
+
 interface ServiceCardProps {
     image: string;
     title: string;
-    subtitles: string[];
+    description: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, subtitles }) => {
-    return (
-      <div className="bg-white shadow-md p-4 mx-auto" style={{ maxWidth: '350px' }}>
-        <img src={image} alt={title} className="w-full h-40 object-cover shadow-md mb-4" />
-        <h3 className="text-2xl font-bold">{title}</h3>
-        <hr></hr>
-        <ul>
-          {subtitles.map((subtitle, index) => (
-            <li key={index} className="text-lg my-1 list-disc">{subtitle}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
+const services = [
+  {
+    image: '/360room.png', 
+    title: '360 Virtual Rooms',
+    description: 'The perfect option for public outreach and virtual open house events. Fully customizable and professionally rendered 360 degree spaces.'
+  },
+  {
+    image: '/3dmodel.png', 
+    title: '3D Modeling and Simulations',
+    description: 'Cutting edge Photo and Video Simulations for every stage of your project. We offer GIS based terrain modeling, realistic textures, and variable time & weather',
+  },
+  {
+    image: '/e3d.png', 
+    title: 'Realtime 3D + Web Development',
+    description: 'Fully custom explorable 3D worlds, alongside industry leading web development.'
+  }
 
-  const Services = () => {
-    const servicesData: ServiceCardProps[] = [
-      {
-        image: '/360room.png', // Replace with actual image paths
-        title: '360 Virtual Rooms',
-        subtitles: [
-          'Customizable web-based rooms',
-          'ADA Friendly',
-          'Ideal for scoping periods and community outreach',
-        ],
-      },
-      {
-        image: '/path/to/image1.jpg', // Replace with actual image paths
-        title: '3D Modeling and Simulations',
-        subtitles: [
-          'Photo and Video Simulations for every stage of construction',
-          'GIS based terrain modeling',
-          'Day / Night Sims',
-        ],
-      },
-      {
-        image: '/e3d.png', // Replace with actual image paths
-        title: 'Realtime 3D + Web Development',
-        subtitles: [
-          'Fully explorable, fully customizable worlds',
-          'Web Development and Design',
-          "Bring your project to life with Unreal Engine pixel streaming",
-        ],
-      }
-   
-    ];
+];
+
+const Services: React.FC = () => {
+
     return (
-        <section className="py-24">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {servicesData.map((service, index) => (
-                <ServiceCard key={index} {...service} />
-              ))}
-            </div>
+      <section className="main-background py-12">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl text-white font-semibold">Our Services</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service) => (
+              <div
+                key={service.title}
+                className="group relative bg-gray-100 p-4 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+              >
+                
+
+                  <div className="relative w-full h-48">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-t-sm"
+                      />
+                  </div>
+                  <div className="relative z-10 mt-4">
+                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                    <p className="text-gray-600">{service.description}</p>
+                  </div>
+                
+              </div>
+            ))}
           </div>
-        </section>
+          <div className="text-center">
+
+          
+            <Link href="/portfolio" className="inline-block bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 text-white font-semibold text-2xl mt-12 py-4 px-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105">
+              View Portfolio
+            </Link>
+          
+
+        </div>
+        </div>
+      </section>
       );
     };
     
