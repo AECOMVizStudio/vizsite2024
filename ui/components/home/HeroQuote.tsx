@@ -9,13 +9,13 @@ import Image from 'next/image'
 
 const quotes = [
   {
-    quote: "Crikey, mate, crocodiles are absolute legends! These prehistoric powerhouses are nature's top predators, and they're built for survival.",
+    quote: "She picked this high nest here, because it'll be out of flood waters. And now she's gonna bite me.",
     name: "Steve Irwin",
     image: "https://placedog.net/150" // Placeholder image URL
   },
   {
-    quote: "They did an ok job, in an ok amount of time, for an ok amount of money.",
-    name: "Orville 'OK' Kennedy",
+    quote: "That which hath made them drunk hath made me bold. What hath quenched them hath given me fire.",
+    name: "Lady Macbeth",
     image: "https://placedog.net/450" // Placeholder image URL
   },
   {
@@ -24,8 +24,8 @@ const quotes = [
     image: "https://placedog.net/250" // Placeholder image URL
   },
   {
-    quote: "Dead in the middle of Little Italy, little did we know that we riddled some middlemen who didn't do diddly.",
-    name: "Big Pun",
+    quote: "We sitting here, I'm supposed to be the franchise player, and we in here talking about practice. Not a game, not a game, we talking about practice man.",
+    name: "Allen Iverson",
     image: "https://placedog.net/250" // Placeholder image URL
   },
 ];
@@ -36,7 +36,7 @@ function HeroQuote() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -56,7 +56,7 @@ function HeroQuote() {
       className="absolute opacity-15"
       />
 
-        <Slider {...settings} className='w-full px-4 py-32'>
+        <Slider {...settings} className='w-full px-4 py-12'>
         {quotes.map((item, index) => (
           <div key={index} className="slick-slide">  {/* Add slick-slide class for potential styling */}
             <div className='flex flex-col md:flex-row  md:items-center sm:items-start md:justify-around'>

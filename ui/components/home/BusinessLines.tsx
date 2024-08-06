@@ -1,62 +1,54 @@
-import { SparklesIcon } from "@heroicons/react/24/solid";
+import Image from 'next/image'
 
-interface BusinessLineCardProps {
-  
-    title: string;
-    
-}
+const industries = [
+  {
+    icon: '/svg/bridge.svg', // Replace with your icon path
+    title: 'Transportation',
+    description: 'Innovative solutions for the transportation industry.',
+  },
+  {
+    icon: '/svg/electricity.svg', // Replace with your icon path
+    title: 'Utilities',
+    description: 'Reliable services for power and water management.',
+  },
+  {
+    icon: '/svg/train.svg', // Replace with your icon path
+    title: 'Infrastructure',
+    description: 'Sustainable development for large scale city projects',
+  },
+];
 
-interface BusinessLine {
-  
-    title: string;
-  }
-
-
-  
-
-
-const BusinessLineCard: React.FC<BusinessLineCardProps> = ({ title }) => {
-    return (
-      <div className="bg-white border-solid flex shadow-md p-6">
-        <div className=" mb-4">
-          <SparklesIcon title={title} className="w-10 h-10" />
-        </div>
-        <h3 className="text-xl font-bold">{title}</h3>
-    
-      </div>
-    );
-};
 
   const BusinessLines = () => {
-    const businessLinesData: BusinessLine[] = [
-      {
-    
-        title: 'Transportation',
-    
-      },
-      {
-
-        title: 'Power & Water',
-    
-      },
-      {
-
-        title: 'Buildings & Places',
-
-      },
-    ];
 
     return (
-        <section className="py-16">
-        <div className="container mx-auto">
-          <h2 className=" text-3xl font-bold text-center mb-8">Trusted Across Industries</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {businessLinesData.map((line, index) => (
-              <BusinessLineCard key={index} {...line} />
+      <section className="bg-gray-100 py-12">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-semibold">Industries We Serve</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {industries.map((industry) => (
+              <div key={industry.title} className="group relative bg-white p-6 rounded-lg shadow-lg overflow-hiddentransform transition-transform duration-300 hover:scale-105">
+                <div className="absolute right-1 inset-y-0 opacity-20 group-hover:opacity-70">
+                  <Image
+                    src={industry.icon}
+                    alt={industry.title}
+                    width={100}
+                    height={100}
+                    className='object-cover'
+                    
+                  />
+                </div>
+                <div className="relative">
+                  <h3 className="text-xl font-bold mb-2">{industry.title}</h3>
+                  <p className="text-gray-600">{industry.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-      </section>
+    </section>
     )
 }
 
