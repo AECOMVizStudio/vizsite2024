@@ -40,7 +40,7 @@ const Header = () => {
   }, [pathname])
 
   return (
-    <header className={`fixed w-full z-20 p-4 transition-all duration-300 ${scrolled ? 'bg-black bg-opacity-90' : 'bg-transparent'} flex justify-between items-center`}>
+    <header className={`fixed w-full z-20 p-8 transition-all duration-300 ${scrolled ? 'bg-black bg-opacity-90' : 'bg-transparent'} flex justify-between items-center`}>
       <h1 className="text-xl font-bold text-gray-200">AECOM Viz Studio</h1>
       <nav>
         <ul className="flex space-x-8">
