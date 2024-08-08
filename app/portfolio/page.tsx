@@ -55,7 +55,7 @@ const portfolioItems = [
   },
 ]
 
-const Page: React.FC = () => {
+const Page = () => {
     return (
       <div className="mx-auto py-24">
         <div className=" text-gray-700">

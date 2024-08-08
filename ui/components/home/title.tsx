@@ -1,6 +1,6 @@
 import TypedText from "./TypedText"
 
-export default function Title(){
+const Title = () => {
     return(
         <div className="flex-start relative min-w-52">
           <div className="container py-6">
@@ -14,3 +14,4 @@ export default function Title(){
     )
 }
 
+export default Title

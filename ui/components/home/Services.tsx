@@ -26,7 +26,7 @@ const services = [
 
 ];
 
-const Services: React.FC = () => {
+const Services = () => {
 
     return (
       <section className="main-background py-12">

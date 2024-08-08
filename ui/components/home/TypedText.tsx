@@ -4,7 +4,7 @@ import Typed from 'typed.js'
 import { useEffect, useRef } from 'react'
 
 
-const TypedText: React.FC = () => {
+const TypedText = () => {
     const typedElement = useRef<HTMLSpanElement>(null)
 
     useEffect(() => {
