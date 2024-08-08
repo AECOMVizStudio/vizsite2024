@@ -2,17 +2,17 @@ import Image from 'next/image'
 
 const industries = [
   {
-    icon: '/svg/bridge.svg', // Replace with your icon path
+    icon: '/svg/train.svg', 
     title: 'Transportation',
     description: 'Innovative solutions for the transportation industry.',
   },
   {
-    icon: '/svg/electricity.svg', // Replace with your icon path
+    icon: '/svg/electricity.svg', 
     title: 'Utilities',
     description: 'Reliable services for power and water management.',
   },
   {
-    icon: '/svg/train.svg', // Replace with your icon path
+    icon: '/svg/bridge.svg', 
     title: 'Infrastructure',
     description: 'Sustainable development for large scale city projects',
   },
@@ -25,7 +25,7 @@ const industries = [
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold">Industries We Serve</h2>
+            <h2 className="text-3xl font-semibold">Business Lines We Serve</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {industries.map((industry) => (
