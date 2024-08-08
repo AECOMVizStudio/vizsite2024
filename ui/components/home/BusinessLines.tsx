@@ -8,7 +8,7 @@ const industries = [
   },
   {
     icon: '/svg/electricity.svg', 
-    title: 'Utilities',
+    title: 'Power & Water',
     description: 'Reliable services for power and water management.',
   },
   {
@@ -24,8 +24,9 @@ const industries = [
     return (
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold">Business Lines We Serve</h2>
+          <div className="text-left mb-10">
+            <h2 className="text-3xl font-bold pb-2">Business Lines We Serve</h2>
+            <h3 className="text-lg text-gray-500">We have experience with every industry, but do much of our work for the following: </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {industries.map((industry) => (
