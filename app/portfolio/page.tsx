@@ -4,8 +4,9 @@ import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 const portfolioItems = [
   {
     imageSrc:'https://placehold.co/800x400',
-    title: 'Riverfront Park',
+    title: 'Studio Showcase',
     href: '/featured',
+    description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
     tags: ['3D' , 'Architecture']
   },
 
@@ -13,6 +14,7 @@ const portfolioItems = [
     imageSrc: 'https://placehold.co/800x400',
     title: 'STEAM 360',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
+    description: 'A 360° virtual room, custom built for STEAM students. This project is complete with keyboard navigation and is text to speech compatible',
     tags: ['Virtual Room', 'Outreach'],
   },
   {
@@ -55,10 +57,6 @@ const portfolioItems = [
 
 const Page: React.FC = () => {
     return (
-      
-      
-      
-      
       <div className="mx-auto py-24">
         <div className=" text-gray-700">
           <div className="container mx-auto py-12 text-left">
