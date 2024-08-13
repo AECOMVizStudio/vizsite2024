@@ -26,7 +26,7 @@ const services = [
 
 ];
 
-const Services: React.FC = () => {
+const Services = () => {
 
     return (
       <section className="main-background py-12">
@@ -46,8 +46,7 @@ const Services: React.FC = () => {
                     <Image
                       src={service.image}
                       alt={service.title}
-                      layout="fill"
-                      objectFit="cover"
+                      fill={true}
                       className="rounded-t-sm"
                       />
                   </div>
