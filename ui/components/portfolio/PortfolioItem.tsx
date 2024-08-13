@@ -35,7 +35,7 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
             <h3 className="text-lg font-semibold mb-1 mt-2">{title}</h3>
             <div className="flex flex-wrap space-x-2">
                 {tags.map((tag, index) => (
-                <span key={index} className="bg-gray-200 px-2 py-1 text-sm rounded">
+                <span key={index} className="bg-gray-200 px-2 py-1 text-sm shadow-md">
                     {tag}
                 </span>
                 ))}
