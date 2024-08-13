@@ -5,10 +5,10 @@ const values: string[] = ['Detail-Oriented', 'Collaborative', 'Innovative', 'Pro
 
 const Page = () => {
     return (
-      <section className="flex flex-col lg:flex-row items-center md:items-start justify-between p-8 md:p-16 bg-white">
+      <section className="flex mx-auto flex-col lg:flex-row items-center md:items-start justify-between p-8 md:p-16 bg-white">
       {/* Text Section */}
       <div className="pt-24 lg:w-1/2 mb-8 md:mb-0">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About the Studio</h2>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About the Studio</h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed my-8">
           Our team is dedicated to bringing your visions to life through stunning 3D visualizations. With a focus on quality and creativity, we strive to exceed your expectations with every project we undertake.
         </p>
