@@ -5,9 +5,12 @@ import '@google/model-viewer';
 
 const ModelViewer = () => {
   return (
-    <model-viewer camera-controls auto-rotate alt='a plant'
-    src='/models/source/Plam_planter_low.glb' >
-    </model-viewer>
+    <div className='bg-transparent'>
+      <model-viewer camera-controls auto-rotate alt='a plant'
+      src='/models/source/Plam_planter_low.glb'>
+      
+      </model-viewer>
+    </div>
   )
 }
 
