@@ -6,7 +6,7 @@ const values: string[] = ['Detail-Oriented', 'Collaborative', 'Innovative', 'Pro
 const Page = () => {
     return (
       <section className="flex mx-auto flex-col lg:flex-row items-center md:items-start justify-between p-8 md:p-16 bg-white">
-      {/* Text Section */}
+      
       <div className="pt-24 lg:w-1/2 mb-8 md:mb-0">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About the Studio</h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed my-8">
@@ -14,7 +14,7 @@ const Page = () => {
         </p>
 
         <div className="border-t border-gray-300 mt-8 pt-4">
-          <h3 className="text-xl text-gray-600 mb-4">// Our Core Values</h3>
+          <h3 className="text-xl text-gray-600 mb-4">Our Core Values</h3>
           <div className="flex flex-wrap gap-4">
 
           {values.map((value, index) => (
