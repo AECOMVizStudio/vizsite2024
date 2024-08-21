@@ -1,11 +1,12 @@
 
 import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
+
 const portfolioItems = [
   {
-    imageSrc:'https://placehold.co/800x400',
+    imageSrc:'/portfolio/portfolioImage.png',
     title: 'Studio Showcase',
-    href: '/featured',
+    href: '/portfolio/portfolioImage.png',
     description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
     tags: ['3D' , 'Architecture']
   },
@@ -61,15 +62,18 @@ const Page = () => {
         <div className=" text-gray-900">
           <div className="container mx-4 lg:mx-auto py-12 text-left">
             <h1 className="text-4xl font-bold">Portfolio</h1>
-            <h2 className="text-md mt-4">Check out some of our recent projects. Hover to learn more.</h2>
+            <h2 className="text-md mt-4">Check out some of our recent projects. Tap or Hover to learn more.</h2>
           </div>
         </div>
+
+
 
         <div className="container lg:mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
           {portfolioItems.map((item, index) => (
             <PortfolioItem key={index} {...item} />
           ))}
         </div>
+
       </div>
       
     );
