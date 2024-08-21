@@ -9,24 +9,35 @@ import Image from 'next/image'
 
 const quotes = [
   {
-    quote: "She picked this high nest here, because it'll be out of flood waters. And now she's gonna bite me.",
-    name: "Steve Irwin",
-    image: "https://placedog.net/150" // Placeholder image URL
+    quote: "You are all so amazing. This would not be where it is now without all of your hard work and dedication. You are inspirational!",
+    name: "Wendy Lau",
+    image: "https://placedog.net/150",
+    title: "Risk Management Director, ED&I Lead, AECOM" // Placeholder image URL
   },
   {
-    quote: "That which hath made them drunk hath made me bold. What hath quenched them hath given me fire.",
-    name: "Lady Macbeth",
-    image: "https://placedog.net/450" // Placeholder image URL
+    quote: "Working with the AECOM Viz team was again a HUGE success. The best part of the experience was sharing our vision of the meeting and working collaboratively to make it happen.",
+    name: "Odessa L. Phillip, P.E",
+    image: "https://placedog.net/250",
+    title: "President & CEO, Assedo Consulting, LLC"
   },
   {
-    quote: "I don't want any adventures, thank you. Not today. Good morning!",
-    name: "Bilbo Baggins",
-    image: "https://placedog.net/250" // Placeholder image URL
+    quote: "You are always reliable and always come through in a crunch with great quality. Thank you, again, for all your efforts.",
+    name: "Gladys Galer",
+    image: "https://placedog.net/450",
+    title: "Major Pursuits, AECOM" // Placeholder image URL
   },
   {
-    quote: "We sitting here, I'm supposed to be the franchise player, and we in here talking about practice. Not a game, not a game, we talking about practice man.",
-    name: "Allen Iverson",
-    image: "https://placedog.net/250" // Placeholder image URL
+    quote: "Yup! As usual, you guys killed it. Fantastic work. I like that more techniques were developed and refined through your collaboration - Can't thank this team enough.",
+    name: "Paul Boucher",
+    image: "https://placedog.net/250",
+    title: "Senior Graphic Design Manager, DCSA Major Pursuits, AECOM" // Placeholder image URL
+  },
+
+  {
+    quote: "The unique-to-Colfax graphics and user-friendly interface have facilitated an influx of positive public feedback on the project.",
+    name: "Amber Haines",
+    image: "https://placedog.net/250",
+    title: "Parsons, Colfax BRT Deputy Project Manager" // Placeholder image URL
   },
 ];
 
@@ -62,7 +73,8 @@ function HeroQuote() {
             <div className='flex flex-col md:flex-row  md:items-center sm:items-start md:justify-around'>
               <div className='md:w-2/3'>
                 <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold pb-12 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">{item.quote}</h1>
-                <p className='text-xl md:text-2xl lg:text-3xl font-medium text-gray-700'>- {item.name}</p>
+                <p className='text-xl md:text-2xl lg:text-3xl font-medium text-slate-950'>{item.name}</p>
+                <p className='text-xl md:text-2xl lg:text-3xl font-medium text-gray-500'>- {item.title}</p>
               </div>
               <img src={item.image} alt={item.name} className='w-24 h-24 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 border-4 border-gray-300 md:ml-8' />
             </div>
