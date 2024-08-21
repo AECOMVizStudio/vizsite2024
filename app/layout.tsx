@@ -3,9 +3,10 @@ import "./globals.css";
 
 import Header from '@/ui/header';
 import Footer from '@/ui/footer';
-import { Inter } from 'next/font/google';
+import { Montserrat, Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+const monstserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'AECOM Visualization Studio',
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${inter.className} h-full flex flex-col mx-auto`}>
+      <body className={`${monstserrat.className} h-full flex flex-col mx-auto`}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
