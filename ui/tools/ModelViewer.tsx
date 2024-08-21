@@ -5,10 +5,10 @@ import '@google/model-viewer';
 
 const ModelViewer = () => {
   return (
-    <div className='bg-transparent z-30'>
+    <div className='bg-transparent'>
       <model-viewer camera-controls auto-rotate alt='a plant'
       src='/models/source/Plam_planter_low.glb' loading='lazy'
-      className='absolute z-40'>
+      className='absolute'>
       </model-viewer>
     </div>
   )
