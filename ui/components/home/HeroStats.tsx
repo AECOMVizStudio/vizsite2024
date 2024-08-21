@@ -10,25 +10,25 @@ function HeroStats() {
 
 
     return (
-      <div className="flex flex-wrap w-full h-48">
-        <div className="w-full flex flex-row items-center justify-evenly ">
+      <div className="flex flex-wrap w-full">
+        <div className="w-full flex flex-row items-center justify-evenly h-full">
           <div className="text-center">
-            <h2 className="text-5xl font-bold">$125m</h2>
+            <h2 className="text-5xl font-bold">$1bn</h2>
             <p className="text-gray-700">Revenue Gained</p>
           </div>
           <div className="text-center">
-            <h2 className="text-5xl font-bold">200+</h2>
+            <h2 className="text-5xl font-bold">2,000+</h2>
             <p className="text-gray-700">Projects</p>
           </div>
 
           <DynamicComponent />
 
           <div className="text-center">
-            <h2 className="text-5xl font-bold">13</h2>
+            <h2 className="text-5xl font-bold">5</h2>
             <p className="text-gray-700">Industry Awards</p>
           </div>
           <div className="text-center">
-            <h2 className="text-5xl font-bold">70+</h2>
+            <h2 className="text-5xl font-bold">100+</h2>
             <p className="text-gray-700">Years of Experience</p>
           </div>
         </div>
