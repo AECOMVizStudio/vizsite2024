@@ -11,17 +11,17 @@ const services = [
   {
     image: '/360room.png', 
     title: '360 Virtual Rooms',
-    description: 'The perfect option for public outreach and virtual open house events. Fully customizable and professionally rendered 360 degree spaces.'
+    description: 'Immersive, adaptable, and responsive web-based virtual rooms that provide interactive and dynamic settings for your next project delivery.'
   },
   {
     image: '/3dmodel.png', 
-    title: '3D Modeling and Simulations',
-    description: 'Cutting edge Photo and Video Simulations for every stage of your project. We offer GIS based terrain modeling, realistic textures, and variable time & weather',
+    title: '2D + 3D Visualization',
+    description: 'From creating photo simulations, 4D Scheduling animations, conceptual narratives, and renderings that invoke a sense of place, we excel in bringing even the most complex designs to life.',
   },
   {
     image: '/e3d.png', 
     title: 'Realtime 3D + Web Development',
-    description: 'Fully custom explorable 3D worlds, alongside industry leading web development.'
+    description: 'Fully customized, explorable 3D worlds delivered over the web, alongside industry leading web development. Make an impact via the most cutting edge technology available.'
   }
 
 ];
@@ -31,8 +31,9 @@ const Services = () => {
     return (
       <section className="main-background py-12">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl text-white font-semibold">Our Services</h2>
+        <div className="text-left mb-12">
+          <h2 className="text-4xl text-white font-bold pb-2">Our Services</h2>
+          <h3 className="text-lg text-gray-200">Every Project is a Story Waiting to be Told</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service) => (

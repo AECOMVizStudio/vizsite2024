@@ -7,8 +7,8 @@ const ModelViewer = () => {
   return (
     <div className='bg-transparent'>
       <model-viewer camera-controls auto-rotate alt='a plant'
-      src='/models/source/Plam_planter_low.glb'>
-      
+      src='/models/source/Plam_planter_low.glb' loading='lazy'
+      className='absolute'>
       </model-viewer>
     </div>
   )
