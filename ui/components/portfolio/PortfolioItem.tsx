@@ -23,6 +23,7 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
         setIsViewerOpen(false)
     }
     const handleClick = () => {
+        // maybe in the future have videos open in a modal as well
         if (href == imageSrc) {
             handleImageClick();
         } else {
