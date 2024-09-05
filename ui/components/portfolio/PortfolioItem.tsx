@@ -22,6 +22,14 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
     const closeViewer = () => {
         setIsViewerOpen(false)
     }
+    const handleClick = () => {
+        if (href == imageSrc) {
+            handleImageClick();
+        } else {
+            window.open(href, '_blank');
+        }
+    }
+
 
 
 
@@ -30,8 +38,8 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
             <div className="relative overflow-hidden">
                 
                 <img
-                    onClick={handleImageClick}
-                    src={imageSrc + `?text=${title}`}
+                    onClick={handleClick}
+                    src={imageSrc}
                     alt={title}
                     className="w-full h-auto object-cover mb-2 transition-transform duration-300 ease-in-out transform group-hover:scale-105"
                 />
@@ -43,7 +51,7 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
                     {description ? description : 'Include a detailed desciption here'}
                     </p>
                     <button
-                        onClick={handleImageClick}
+                        onClick={handleClick}
                         className="bg-white text-black font-semibold py-2 px-4 rounded shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
                     >
                         View Project
@@ -63,7 +71,7 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
             </div>
             {isViewerOpen && (
                 <ImageViewer
-                    imageSrc={imageSrc}
+                    imageSrc={href}
                     altText={title}
                     isOpen={isViewerOpen}
                     onClose={closeViewer}

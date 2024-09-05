@@ -4,23 +4,24 @@ import PortfolioItem from "@/ui/components/portfolio/PortfolioItem";
 
 const portfolioItems = [
   {
-    imageSrc:'/portfolio/portfolioImage.png',
+    imageSrc:'/portfolio/studioShowcase.webp',
     title: 'Studio Showcase',
-    href: '/portfolio/portfolioImage.png',
+    href: '/portfolio/studioShowcase.webp',
     description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
-    tags: ['3D' , 'Architecture']
+    tags: ['Realtime 3D' , 'Architecture']
   },
 
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'STEAM 360',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    description: 'A 360° virtual room, custom built for STEAM students. This project is complete with keyboard navigation and is text to speech compatible',
-    tags: ['Virtual Room', 'Outreach'],
+    imageSrc: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
+    title: 'EV 360 Demo',
+    href: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
+    description: 'A 360 virtual room showcasing the future of electric vehicles.',
+    tags: ['Rendering', 'Energy'],
   },
   {
     imageSrc: 'https://placehold.co/800x400',
     title: 'Route 3',
+    description: "A 3D model of a proposed highway project. This project was created to help visualize the impact of the project on the surrounding area.",
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
     tags: ['Infrastructure'],
   },
@@ -37,10 +38,11 @@ const portfolioItems = [
     tags: ['Architecture'],
   },
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'CHSR',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['3D Modeling'],
+    imageSrc: '/portfolio/PennStation.webp',
+    title: 'Newark Penn Station 360',
+    description: 'The Viz Studio recreated the Newark Penn Station interior for a 360 virtual room for a pursuit from photos only.',
+    href: 'https://aecomviz.com/Newark-penn360/',
+    tags: ['360 Room', 'Transportation'],
   },
   {
     imageSrc: 'https://placehold.co/800x400',
