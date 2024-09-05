@@ -48,6 +48,7 @@ const Services = () => {
                       src={service.image}
                       alt={service.title}
                       fill={true}
+                      sizes='(max-width:358px) 100vw'
                       className="rounded-t-sm"
                       />
                   </div>
