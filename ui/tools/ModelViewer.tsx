@@ -9,7 +9,7 @@ const ModelViewer = () => {
   return (
     <div className='bg-transparent'>
       <model-viewer camera-controls auto-rotate alt='bridge model'
-      src={model_1} loading='lazy'
+      src={model_2} loading='lazy'
       >
       </model-viewer>
     </div>
