@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${monstserrat.className} w-full h-full flex flex-col mx-auto`}>
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

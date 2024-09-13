@@ -1,9 +1,4 @@
-import dynamic from 'next/dynamic';
 
-const DynamicComponent = dynamic(() => import('@/ui/tools/ModelViewer'), {
-  loading: () => <p>Loading model...</p>,
-  ssr: false,
-});
 
 function HeroStats() {
   return (
@@ -18,9 +13,7 @@ function HeroStats() {
           <p className="text-gray-700">Projects</p>
         </div>
 
-        <div className="w-full md:w-auto flex justify-center">
-          <DynamicComponent />
-        </div>
+
 
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold">5</h2>
