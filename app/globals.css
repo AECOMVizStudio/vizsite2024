@@ -55,6 +55,14 @@
   background-color: #19171A;
 }
 
+model-viewer {
+  border: 2px solid #ccc;
+  margin-top: 50px;
+  width: 90vw;
+  height: 600px;
+  background-color: #7e7e7e;
+}
+
 
 @layer utilities {
   .text-balance {

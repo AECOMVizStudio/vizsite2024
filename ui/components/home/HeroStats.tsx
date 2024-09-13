@@ -1,36 +1,22 @@
-import dynamic from 'next/dynamic';
-
-const DynamicComponent = dynamic(() => import('@/ui/tools/ModelViewer'), {
-  loading: () => <p>Loading model...</p>,
-  ssr: false,
-});
-
 function HeroStats() {
+  const stats = [
+    { title: 'Revenue Gained', value: '$1bn' },
+    { title: 'Projects', value: '2,000+' },
+    { title: 'Industry Awards', value: '5' },
+    { title: 'Years of Experience', value: '100+' },
+  ]
+  
   return (
-    <div className="flex flex-wrap w-full justify-center items-center py-8">
-      <div className="w-full md:flex md:flex-row md:justify-evenly md:items-center h-full space-y-8 md:space-y-0 space-x-0 md:space-x-8">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">$1bn</h2>
-          <p className="text-gray-700">Revenue Gained</p>
-        </div>
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">2,000+</h2>
-          <p className="text-gray-700">Projects</p>
-        </div>
+    <div className="grid gap-4 md:grid-cols-4 grid-cols-2">
 
-        <div className="w-full md:w-auto flex justify-center">
-          <DynamicComponent />
+      {stats.map((stat) =>(
+        <div key={stat.title} className="text-center py-8 transition transform hover:rotate-2">
+          <h2  className="text-4xl md:text-5xl font-bold">{stat.value}</h2>
+          <p className="text-gray-700">{stat.title}</p>
         </div>
+      ))}
 
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">5</h2>
-          <p className="text-gray-700">Industry Awards</p>
-        </div>
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold">100+</h2>
-          <p className="text-gray-700">Years of Experience</p>
-        </div>
-      </div>
+
     </div>
   );
 }

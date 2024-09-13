@@ -9,17 +9,17 @@ interface ServiceCardProps {
 
 const services = [
   {
-    image: '/360room.png', 
+    image: '/360room.webp', 
     title: '360 Virtual Rooms',
     description: 'Immersive, adaptable, and responsive web-based virtual rooms that provide interactive and dynamic settings for your next project delivery.'
   },
   {
-    image: '/3dmodel.png', 
+    image: '/services3D.webp', 
     title: '2D + 3D Visualization',
     description: 'From creating photo simulations, 4D Scheduling animations, conceptual narratives, and renderings that invoke a sense of place, we excel in bringing even the most complex designs to life.',
   },
   {
-    image: '/e3d.png', 
+    image: '/Realtime3D.webp', 
     title: 'Realtime 3D + Web Development',
     description: 'Fully customized, explorable 3D worlds delivered over the web, alongside industry leading web development. Make an impact via the most cutting edge technology available.'
   }
@@ -48,6 +48,7 @@ const Services = () => {
                       src={service.image}
                       alt={service.title}
                       fill={true}
+                      sizes='(max-width:358px) 100vw'
                       className="rounded-t-sm"
                       />
                   </div>

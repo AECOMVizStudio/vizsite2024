@@ -14,7 +14,7 @@ const ImageViewer = ({ imageSrc, altText, isOpen, onClose }: ImageViewerProps) =
           <div className="relative max-w-4xl w-full ">
             <button
               onClick={onClose}
-              className="absolute top-0 right-0 p-4 text-white text-xl"
+              className="absolute top-0 right-0  text-white text-2xl p-4"
             >
               &times;
             </button>

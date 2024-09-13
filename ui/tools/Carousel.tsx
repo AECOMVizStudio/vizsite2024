@@ -14,26 +14,22 @@ const quotes = [
     {
       quote: "Working with the AECOM Viz team was again a HUGE success. The best part of the experience was sharing our vision of the meeting and working collaboratively to make it happen.",
       name: "Odessa L. Phillip, P.E",
-      image: "https://placedog.net/250",
       title: "President & CEO, Assedo Consulting, LLC"
     },
     {
       quote: "You are always reliable and always come through in a crunch with great quality. Thank you, again, for all your efforts.",
       name: "Gladys Galer",
-      image: "https://placedog.net/450",
       title: "Major Pursuits, AECOM" // Placeholder image URL
     },
     {
       quote: "Yup! As usual, you guys killed it. Fantastic work. I like that more techniques were developed and refined through your collaboration - Can't thank this team enough.",
       name: "Paul Boucher",
-      image: "https://placedog.net/250",
       title: "Senior Graphic Design Manager, DCSA Major Pursuits, AECOM" // Placeholder image URL
     },
   
     {
       quote: "The unique-to-Colfax graphics and user-friendly interface have facilitated an influx of positive public feedback on the project.",
       name: "Amber Haines",
-      image: "https://placedog.net/250",
       title: "Parsons, Colfax BRT Deputy Project Manager" // Placeholder image URL
     },
   ];
@@ -69,7 +65,7 @@ const Carousel = () => {
                 <p className='text-xl md:text-2xl lg:text-3xl font-medium text-slate-950'>{item.name}</p>
                 <p className='text-xl md:text-2xl lg:text-3xl font-medium text-gray-500'>- {item.title}</p>
               </div>
-              <img src={item.image} alt={item.name} className='w-24 h-24 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 border-4 border-gray-300 md:ml-8' />
+              {/* <img src={item.image} alt={item.name} className='w-24 h-24 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 border-4 border-gray-300 md:ml-8' /> */}
             </div>
             
           </div>
