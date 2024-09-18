@@ -38,13 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 To-Do list:
 
-Build About Us page
-Complete static styling (maybe a pop of color?)
-Do responsive design (collapsible menu like on the github copilot page)
-Add flash (Lenis scroll, AOS or ScrollReveal, various hover effects)
-final assets, icons, and copy
+Add flash (Lenis scroll, AOS or ScrollReveal)
+final assets, icons, and confirm colors with brand guide
 SEO + analytics
-Deployment to vercel and goDaddy URL move from Heroku to Vercel
+Move DNS to Netlify
 
 Post-Deployment:
 Any possible optimizations
