@@ -17,6 +17,8 @@ const config: Config = {
         chicagoBlack:'#565656',
         deepGreen: '#064e3b', // Deep green
         lightBlue: '#60a5fa', // Light blue
+        aecomGreen: '#00353e', // AECOM green
+        earthGreen: '#008768', // Earth green
       }
     },
   },

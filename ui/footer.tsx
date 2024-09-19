@@ -4,7 +4,7 @@ const Footer = () => {
     return (
       <footer className="bg-black text-white bg-opacity-90 py-6 ">
        
-          <ul className="flex flex-col justify-center space-y-2 items-center md:flex-row md:space-x-6">
+          <ul className="flex flex-col justify-center space-y-2 items-center md:flex-row md:space-x-6 md:space-y-0">
             <li>
               <Link href="/">Home</Link>
             </li>

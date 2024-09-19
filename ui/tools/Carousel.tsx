@@ -61,7 +61,7 @@ const Carousel = () => {
           <div key={index} className="slick-slide">  {/* Add slick-slide class for potential styling */}
             <div className='flex flex-col md:flex-row  md:items-center sm:items-start md:justify-around'>
               <div className='md:w-2/3'>
-                <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold pb-12 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">{item.quote}</h1>
+                <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold pb-12 text-transparent bg-clip-text bg-gradient-to-r from-aecomGreen to-earthGreen">{item.quote}</h1>
                 <p className='text-xl md:text-2xl lg:text-3xl font-medium text-slate-950'>{item.name}</p>
                 <p className='text-xl md:text-2xl lg:text-3xl font-medium text-gray-500'>- {item.title}</p>
               </div>
