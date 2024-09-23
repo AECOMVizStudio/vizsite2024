@@ -47,16 +47,18 @@ const portfolioItems = [
     tags: ['360 Room', 'Transportation'],
   },
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'Second Avenue Subway',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
+    imageSrc: '/portfolio/DiyarAlMuharraq.webp',
+    title: 'Diyar al Muharraq',
+    description : 'A visualization of the largest privately built community in Bahrain',
+    href: 'https://vimeo.com/386603551',
     tags: ['Rendering', 'Architecture'],
   },
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'West Seattle Link Extension',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Realtime 360', 'Transportation'],
+    imageSrc: '/portfolio/Lakefront.webp',
+    title: 'Chicago SmartLights ComEd',
+    description: 'A detailed techincal rendering of the Smart Lighting Implementation plan',
+    href: '/portfolio/Lakefront.webp',
+    tags: ['Rendering', 'Energy'],  
   },
 ]
 

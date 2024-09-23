@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import ImageViewer from './ImageViewer';
+import { oneMinus } from 'three/webgpu';
 
 interface PortfolioItemProps {
     imageSrc: string;
@@ -72,7 +73,7 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
             </div>
             {isViewerOpen && (
                 <ImageViewer
-                    imageSrc={href}
+                    imageSrc={imageSrc}
                     altText={title}
                     isOpen={isViewerOpen}
                     onClose={closeViewer}
