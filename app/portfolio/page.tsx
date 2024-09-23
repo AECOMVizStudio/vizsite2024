@@ -8,15 +8,15 @@ const portfolioItems = [
     title: 'Studio Showcase',
     href: '/portfolio/studioShowcase.webp',
     description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
-    tags: ['Realtime 3D' , 'Architecture']
+    tags: ['Realtime 3D' , 'Architecture', 'Transportation'],
   },
 
   {
-    imageSrc: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
-    title: 'EV 360 Demo',
-    href: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
-    description: 'A 360 virtual room showcasing the future of electric vehicles.',
-    tags: ['Rendering', 'Energy'],
+    imageSrc: '/portfolio/ChicagoLakefront.webp',
+    title: 'Chicago Lakefront',
+    href: 'https://vimeo.com/259920004?share=copy',
+    description: 'A compliation of 3D renderings of the Chicago Lakefront projects.',
+    tags: ['Rendering', 'Transportation'],
   },
   {
     imageSrc: 'portfolio/HermosaEIS.webp',
@@ -50,7 +50,7 @@ const portfolioItems = [
     imageSrc: 'https://placehold.co/800x400',
     title: 'Second Avenue Subway',
     href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['3D Rendering', 'Architecture'],
+    tags: ['Rendering', 'Architecture'],
   },
   {
     imageSrc: 'https://placehold.co/800x400',
