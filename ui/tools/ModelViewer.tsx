@@ -7,7 +7,7 @@ const model_2 = '/models/source/GLB_43rdBridge.glb'
 
 const ModelViewer = () => {
   return (
-    <div className='bg-transparent'>
+    <div>
       <model-viewer 
       camera-orbit="40deg 40deg 15m" camera-controls auto-rotate interactionPrompt='auto'
       src={model_2} alt='bridge model' loading='lazy'

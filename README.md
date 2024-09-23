@@ -38,12 +38,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 To-Do list:
 
+
 Add flash (Lenis scroll, AOS or ScrollReveal)
-final assets, icons, and confirm colors with brand guide
+
 SEO + analytics
 Move DNS to Netlify
 
 Post-Deployment:
+make videos embed on image viewer modal
 Any possible optimizations
+darkmode
 Featured Page
 Working Filters for Portfolio page

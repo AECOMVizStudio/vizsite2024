@@ -6,17 +6,17 @@ const portfolioItems = [
   {
     imageSrc:'/portfolio/studioShowcase.webp',
     title: 'Studio Showcase',
-    href: '/portfolio/studioShowcase.webp',
+    href: 'https://vimeo.com/995810614',
     description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
-    tags: ['Realtime 3D' , 'Architecture']
+    tags: ['Realtime 3D' , 'Architecture', 'Transportation'],
   },
 
   {
-    imageSrc: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
-    title: 'EV 360 Demo',
-    href: '/portfolio/Electric_Vehicles_Virtual_Room.webp',
-    description: 'A 360 virtual room showcasing the future of electric vehicles.',
-    tags: ['Rendering', 'Energy'],
+    imageSrc: '/portfolio/ChicagoLakefront.webp',
+    title: 'Chicago Lakefront',
+    href: 'https://vimeo.com/259920004?share=copy',
+    description: 'A compliation of 3D renderings of the Chicago Lakefront projects.',
+    tags: ['Rendering', 'Transportation'],
   },
   {
     imageSrc: 'portfolio/HermosaEIS.webp',
@@ -47,16 +47,18 @@ const portfolioItems = [
     tags: ['360 Room', 'Transportation'],
   },
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'Second Avenue Subway',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['3D Rendering', 'Architecture'],
+    imageSrc: '/portfolio/DiyarAlMuharraq.webp',
+    title: 'Diyar al Muharraq',
+    description : 'A visualization of the largest privately built community in Bahrain',
+    href: 'https://vimeo.com/386603551',
+    tags: ['Rendering', 'Architecture'],
   },
   {
-    imageSrc: 'https://placehold.co/800x400',
-    title: 'West Seattle Link Extension',
-    href: 'https://aecomvis2023.herokuapp.com/portfolio',
-    tags: ['Realtime 360', 'Transportation'],
+    imageSrc: '/portfolio/Lakefront.webp',
+    title: 'Chicago SmartLights ComEd',
+    description: 'A detailed techincal rendering of the Smart Lighting Implementation plan',
+    href: '/portfolio/Lakefront.webp',
+    tags: ['Rendering', 'Energy'],  
   },
 ]
 

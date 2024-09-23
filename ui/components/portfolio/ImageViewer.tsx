@@ -11,10 +11,11 @@ const ImageViewer = ({ imageSrc, altText, isOpen, onClose }: ImageViewerProps) =
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-          <div className="relative max-w-4xl w-full ">
+          <div className="relative max-w-6xl w-full ">
             <button
               onClick={onClose}
               className="absolute top-0 right-0  text-white text-2xl p-4"
+              aria-label="Close Image Viewer"
             >
               &times;
             </button>
