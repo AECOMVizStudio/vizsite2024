@@ -39,10 +39,20 @@
   border-image-slice: 1;
 }
 
+.gridhover {
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+}
+.gridhover:hover {
+    transform: translateY(-10px); /* Moves the div 10px up */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9); 
+
+ 
+}
+
 .group:hover .multicolor-border {
   animation: multicolor-border 2s linear infinite;
 }
-
 
 .color-change {
   animation: colorChange 10s infinite;
