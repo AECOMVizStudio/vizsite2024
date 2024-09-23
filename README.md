@@ -38,6 +38,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 To-Do list:
 
+1bn+
+Change Industry Awards
+Better thumbnail for Studio Showcase Project, and add a tag for Transportation
+Increase size of image modals
+Replace EV360 with Chicago Lakefront
+Diyar al Muharraq video
+Darker background on the bridge 3D
+
 Add flash (Lenis scroll, AOS or ScrollReveal)
 final assets, icons, and confirm colors with brand guide
 SEO + analytics
@@ -45,5 +53,6 @@ Move DNS to Netlify
 
 Post-Deployment:
 Any possible optimizations
+darkmode
 Featured Page
 Working Filters for Portfolio page
