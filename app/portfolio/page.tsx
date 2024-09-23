@@ -6,7 +6,7 @@ const portfolioItems = [
   {
     imageSrc:'/portfolio/studioShowcase.webp',
     title: 'Studio Showcase',
-    href: '/portfolio/studioShowcase.webp',
+    href: 'https://vimeo.com/995810614',
     description: 'A realtime 3D project created to showcase some of our best work in Unreal Engine.',
     tags: ['Realtime 3D' , 'Architecture', 'Transportation'],
   },
