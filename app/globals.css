@@ -57,10 +57,11 @@
 
 model-viewer {
   /* border: 2px solid #ccc; */
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin: 50px 0 0 0;
   width: 70vw;
   height: 600px;
-  background-color: #eaeaea;
+  background-color: #464646;
 }
 
 #annotation{
