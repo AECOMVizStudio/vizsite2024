@@ -7,12 +7,14 @@ interface PortfolioItemProps {
     imageSrc: string;
     title: string;
     href: string;
+    demohref?: string;
+    isDemo:boolean;
     description?: string;
     tags: string[];
 }
 
 
-const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioItemProps) => {
+const PortfolioItem = ({ imageSrc, title, href, demohref, isDemo, description, tags}: PortfolioItemProps) => {
 
     const [isViewerOpen, setIsViewerOpen] = useState(false)
 
@@ -31,6 +33,15 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
             window.open(href, '_blank');
         }
     }
+
+    const handleDemoClick = () => {
+        if (demohref && typeof demohref === 'string' && demohref.trim() !== '') {
+            window.open(demohref, '_blank');
+        } else {
+            console.error('Demo link is not provided or invalid');
+        }
+    };
+    
 
 
 
@@ -52,12 +63,25 @@ const PortfolioItem = ({ imageSrc, title, href, description, tags}: PortfolioIte
                     <p className="text-white mb-4">
                     {description ? description : 'Include a detailed desciption here'}
                     </p>
-                    <button
-                        onClick={handleClick}
-                        className="bg-white text-black font-semibold py-2 px-4 rounded shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
-                    >
-                        View Project
-                    </button>
+                    <div className='flex flex-row space-x-2'>
+                        <button
+                            onClick={handleClick}
+                            className="bg-white text-black font-semibold py-2 px-4 rounded shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
+                            >
+                            View Project
+                        </button>
+
+                        {isDemo && demohref &&          
+                            <button
+                            onClick={handleDemoClick}
+                            className="bg-white text-black font-semibold py-2 px-4 rounded shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105"
+                            >
+                            Demo
+                        </button>
+                        }
+                            
+                        
+                    </div>
                 </div>
                     {/* End hover visible content */}
             </div>
