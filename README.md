@@ -38,9 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 To-Do list:
 Add flash (Lenis scroll, AOS or ScrollReveal)
-
 SEO + analytics
-Move DNS to Netlify
+3rd tag alignment on mobile
+top left logo
+Add a favicon
 
 Post-Deployment:
 make videos embed on image viewer modal
