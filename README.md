@@ -37,8 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 To-Do list:
-
-
 Add flash (Lenis scroll, AOS or ScrollReveal)
 
 SEO + analytics
@@ -50,3 +48,4 @@ Any possible optimizations
 darkmode
 Featured Page
 Working Filters for Portfolio page
+backend for comment submission - Tyler
