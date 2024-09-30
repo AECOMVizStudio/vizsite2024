@@ -41,7 +41,11 @@ const Header = () => {
 
   return (
     <header className= {`fixed w-full p-5 m-0 z-20 transition-all duration-300 flex justify-between items-center ${scrolled ? 'bg-black bg-opacity-90' : 'bg-transparent'}`}>
-      <h1 className="text-xl font-bold text-gray-200">AECOM Viz Studio</h1>
+    
+
+      <Link href="/">
+        <img src="/logo.png" alt="AECOM Viz Studio Logo" className="h-5" />
+      </Link>
 
 
       {/* Mobile menu button */}
