@@ -10,7 +10,7 @@ const monstserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'AECOM Visualization Studio',
-  description: "AECOM's highest rated visualization experts. We specialize in 3D modeling, realtime 3D, simulations, and more for business lines such as Water, Power, and Transportation",
+  description: "AECOM's highest rated visualization experts. We specialize in 3D modeling, realtime 3D, simulations, and more for business lines such as Water, Power, Architecture and Transportation",
 };
 
 export default function RootLayout({
