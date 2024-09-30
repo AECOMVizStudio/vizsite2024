@@ -9,13 +9,13 @@ const Footer = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/portfolio">Portfolio</Link>
+              <Link href="/portfolio">Showcase</Link>
             </li>
             <li>
               <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="https://aecomvis2023.herokuapp.com/portfolio" target='_blank'>Legacy Mode</Link>
+              <Link href="https://aecomvis2023.herokuapp.com/portfolio" target='_blank'>Full Portfolio</Link>
             </li>
           </ul>
        
