@@ -88,13 +88,13 @@ const PortfolioItem = ({ imageSrc, title, href, demohref, isDemo, description, t
 
 
             <h3 className="text-lg font-semibold mb-1 mt-2">{title}</h3>
-            <div className="flex flex-wrap space-x-2">
-                {tags.map((tag, index) => (
-                <span key={index} className="bg-gray-200 px-2 py-1 text-sm shadow-md">
-                    {tag}
-                </span>
-                ))}
-            </div>
+                <div className="flex flex-row space-x-2">
+                    {tags.map((tag, index) => (
+                    <span key={index} className="bg-gray-200 p-2 text-sm shadow-md">
+                        {tag}
+                    </span>
+                    ))}
+                </div>
             {isViewerOpen && (
                 <ImageViewer
                     imageSrc={imageSrc}
