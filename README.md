@@ -37,6 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 To-Do list:
+add filter system to showcase page
 Add flash (Lenis scroll, AOS or ScrollReveal)
 SEO + analytics
 3rd tag alignment on mobile
